@@ -1,7 +1,7 @@
 const ContactSection = ()=>{
     return(
         <section className="bg-[#121212] h-full w-full">
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center ">
                 <h2 className="text-pink-400 text-4xl px-4 py-2 font-bold">Contact Me</h2>
             <form >  
                 <label className="text-pink-400 font-bold text-2xl">Name:
