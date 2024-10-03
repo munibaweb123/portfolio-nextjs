@@ -95,7 +95,7 @@ export default function ProjectsSection(){
 
        </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectData.map((projects)=>
+        {filteredProjects.map((projects)=>
         <Card key={projects.id} 
         title={projects.title} 
         description={projects.description} 

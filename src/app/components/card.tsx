@@ -4,12 +4,12 @@ interface CardProps{
     title:string;
     description:string;
     image:string;
-    gitUrl:string;
-    previewUrl:string;
+    // gitUrl:string;
+    // previewUrl:string;
     
 }
 
-const Card:React.FC<CardProps>=({title,description,image, gitUrl, previewUrl})=>{
+const Card:React.FC<CardProps>=({title,description,image, })=>{
     return(
         
         <div className="bg-[#121212] rounded-lg bg-opacity-50">
