@@ -48,7 +48,7 @@ const TAB_DATA =[
 
 const AboutSection = ()=>{
     const [tab,setTab] = useState("skills")
-    const [ isPending,startTransition] = useTransition();
+    const [ ispending,startTransition] = useTransition();
     const handleTabChange =(id)=>{
         startTransition(()=>{
             setTab(id)
@@ -64,24 +64,24 @@ return(
             I had learn Typescript using visual studio code, nodejs in Quarter 1. Also learn how to publish code on github.
         </p>
         
-        <div className="flex flex-row justify-start mt-8 ">
+        <div className="flex flex-row justify-start mt-8 p-x-4">
             <TabButton selectTab={()=>handleTabChange("skills")} 
             active={tab==="skills"}>
-                {" "}
-                Skills{" "}
+                
+                Skills
             </TabButton>
             <TabButton selectTab={()=>handleTabChange("education")} 
             active={tab==="education"}>
-                {" "}
-                Education{" "}
+                
+                Education
            
             </TabButton>
             <TabButton selectTab={()=>handleTabChange("certifications")} 
             active={tab==="certifications"}>
-                {" "}
-                Certifications{" "}
+                
+                Certifications
             </TabButton>
-        </div>
+        </div>{ispending}
         <div className="mt-8">{TAB_DATA.find((t)=>t.id===tab)?.content}</div>
         </div>
         </div>    

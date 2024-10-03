@@ -9,7 +9,7 @@ interface CardProps{
     
 }
 
-const Card:React.FC<CardProps>=({title,description,image, })=>{
+const Card:React.FC<CardProps>=({title,description,image})=>{
     return(
         
         <div className="bg-[#121212] rounded-lg bg-opacity-50">
