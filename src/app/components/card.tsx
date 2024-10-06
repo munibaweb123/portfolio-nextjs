@@ -16,12 +16,12 @@ const Card:React.FC<CardProps>=({title,description,image,gitUrl,previewUrl})=>{
             <div className="h-52 md:h-72 rounded-t-xl relative group" style={{background:`url(${image})`,backgroundSize:"cover"}}>
             
             <div className="overlay justify-center items-center  absolute  w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex  group-hover:bg-opacity-80 transition-all duration-500">
-                <Link href="/" className="flex justify-center items-center h-14 w-14 border-2 relative rounded-full border-pink-400 hover:border-white group/link">
+                <Link href={gitUrl} className="flex justify-center items-center h-14 w-14 border-2 relative rounded-full border-pink-400 hover:border-white group/link">
                 <CodeBracketIcon className="h-10 w-10 text-pink-400 hover:white absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"/>
-                {gitUrl}
+                
                 </Link>
 
-                <Link href="/" className="flex justify-center items-center h-14 w-14 border-2 relative rounded-full border-pink-400 hover:border-white group/link">
+                <Link href={previewUrl} className="flex justify-center items-center h-14 w-14 border-2 relative rounded-full border-pink-400 hover:border-white group/link">
                 <EyeIcon className="h-10 w-10 text-pink-400 hover:white absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"/>
                 {previewUrl}
                 </Link>

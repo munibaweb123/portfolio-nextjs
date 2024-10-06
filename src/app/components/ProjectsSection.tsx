@@ -12,8 +12,8 @@ const projectData =[
         description:"A countdown app with nextjs.",
         image:"/images/countdown-project-mockup.jpg",
         name1:["All","Web"],
-        gitUrl:"/",
-        previewUrl:"/",
+        gitUrl:"https://github.com/munibaweb123/30-days-of-projects.git",
+        previewUrl:"https://30-days-of-projects-two.vercel.app/",
 
     },
     {
@@ -22,8 +22,8 @@ const projectData =[
         description:"A weather-widget app with nextjs.", 
         image:"/images/weather-app-mockup.jpg",
         name1:["All","Web"],
-        gitUrl:"/",
-        previewUrl:"/",
+        gitUrl:"https://github.com/munibaweb123/day_2_of_30_days_projects.git",
+        previewUrl:"https://day-2-of-30-days-projects.vercel.app/",
 
     },
     {
@@ -32,7 +32,7 @@ const projectData =[
         description:"A Birthday wishing app with nextjs.", 
         image:"/images/birthdaywish-app-mockup.jpg",
         name1:["All","Web"],
-        gitUrl:"/",
+        gitUrl:"https://github.com/munibaweb123/day_3_nextjs.git",
         previewUrl:"/",
 
     },
@@ -42,7 +42,7 @@ const projectData =[
         description:"A Number guessing game with nextjs.", 
         image:"/images/number-guessing-mockup.jpg",
         name1:["All","Web"],
-        gitUrl:"/",
+        gitUrl:"https://github.com/munibaweb123/day_4_nextjs.git",
         previewUrl:"/",
 
 
@@ -53,7 +53,7 @@ const projectData =[
         description:"A Simple calculator with nextjs.",
         image:"/images/calculator-mockup.jpg",
         name1:["All","Web"],
-        gitUrl:"/",
+        gitUrl:"https://github.com/munibaweb123/day_5_nextjs.git",
         previewUrl:"/",
 
 
@@ -64,7 +64,7 @@ const projectData =[
         description:"A Digital clock with nextjs.", 
         image:"/images/clock-mockup.jpg",
         name1:["All","Web"] ,
-        gitUrl:"/",
+        gitUrl:"https://github.com/munibaweb123/day_6_nextjs.git",
         previewUrl:"/",
 
 
@@ -75,7 +75,7 @@ const projectData =[
         description:"An oop bank console app with typescript.", 
         image:"/images/oop-bank.jpg",
         name1:["Typescript"] ,
-        gitUrl:"/",
+        gitUrl:"https://github.com/munibaweb123/OOP-BANK.git",
         previewUrl:"/",
     }
 ]
