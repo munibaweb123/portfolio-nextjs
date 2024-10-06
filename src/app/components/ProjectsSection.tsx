@@ -11,7 +11,7 @@ const projectData =[
         title:"Countdown app",
         description:"A countdown app with nextjs.",
         image:"/images/countdown-project-mockup.jpg",
-        name1:["All","Web","Typescript"],
+        name1:["All","Web"],
         gitUrl:"/",
         previewUrl:"/",
 
@@ -63,11 +63,20 @@ const projectData =[
         title:"Digital Clock", 
         description:"A Digital clock with nextjs.", 
         image:"/images/clock-mockup.jpg",
-        name1:["Web"] ,
+        name1:["All","Web"] ,
         gitUrl:"/",
         previewUrl:"/",
 
 
+    },
+    {
+        id:7,
+        title:"OOP Bank", 
+        description:"An oop bank console app with typescript.", 
+        image:"/images/oop-bank.jpg",
+        name1:["Typescript"] ,
+        gitUrl:"/",
+        previewUrl:"/",
     }
 ]
 
@@ -81,10 +90,9 @@ export default function ProjectsSection(){
  
     
   
-    // const filteredProjects = projectData.filter((project)=>{
-    //     project.name1.includes(tag)
-            
-    // })
+    const filteredProjects = projectData.filter(project => 
+        tag === "All" || project.name1.includes(tag)
+    );
 
 
    
@@ -98,7 +106,7 @@ export default function ProjectsSection(){
 
        </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectData.map((projects)=>
+        {filteredProjects.map((projects)=>
         <Card key={projects.id} 
         title={projects.title} 
         description={projects.description} 
