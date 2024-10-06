@@ -29,7 +29,7 @@ const NavLinks = [
 const Navbar= () => {
     const [navbarOpen, setNavbarOpen]=useState(false);
     return(
-        <nav className="fixed top-0 right-0 left-0 z-10 flex-1 justify-between flex-wrap mx-auto p-8 bg-[#121212] bg-opacity-100 px-4 py-8">
+        <nav className="fixed top-0 right-0 left-0 z-10 flex-1 justify-between flex-wrap mx-auto p-8 bg-[#121212] bg-opacity-100 px-4 py-8 pt-10">
           <div className="container items-center justify-between px-4 py-2 mx-auto">
                 <Link href={"/"} className="text-pink-400 font-bold text-2xl md:text-5xl">Portfolio.</Link></div>
             
