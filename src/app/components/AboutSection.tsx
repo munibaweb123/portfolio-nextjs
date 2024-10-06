@@ -49,7 +49,7 @@ const TAB_DATA =[
 const AboutSection = ()=>{
     const [tab,setTab] = useState("skills")
     const [ ispending,startTransition] = useTransition();
-    const handleTabChange =(id)=>{
+    const handleTabChange =(id:string)=>{
         startTransition(()=>{
             setTab(id)
         })
@@ -60,7 +60,7 @@ return(
         <Image src="/images/about.jpg" width={500} height={500} alt="about me" className="rounded"/>
         <div className="mt-4 md:mt-0  text-left flex flex-col h-full">
         <h2 className="text-4xl font-bold text-pink-400 mb-4 ">About me</h2>
-        <p className="text-base lg:text-lg">I'm a student at governor house of GIAIC Course. Enrolled in Quarter 2, learning nextjs in this Quarter.
+        <p className="text-base lg:text-lg">I&apos;m a student at governor house of GIAIC Course. Enrolled in Quarter 2, learning nextjs in this Quarter.
             I had learn Typescript using visual studio code, nodejs in Quarter 1. Also learn how to publish code on github.
         </p>
         
