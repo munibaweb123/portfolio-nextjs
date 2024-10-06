@@ -23,7 +23,7 @@ const Card:React.FC<CardProps>=({title,description,image,gitUrl,previewUrl})=>{
 
                 <Link href={previewUrl} className="flex justify-center items-center h-14 w-14 border-2 relative rounded-full border-pink-400 hover:border-white group/link">
                 <EyeIcon className="h-10 w-10 text-pink-400 hover:white absolute top-1/2 transform -translate-x-1/2 -translate-y-1/2  cursor-pointer group-hover/link:text-white"/>
-                {previewUrl}
+                
                 </Link>
             </div>
             </div>
