@@ -73,7 +73,7 @@ const projectData =[
 
 export default function ProjectsSection(){
     const [tag,setTag]= useState("All");
-    const handleTagChange = (newTag) => {
+    const handleTagChange = (newTag:string) => {
         setTag(newTag)
     }
    
@@ -92,9 +92,9 @@ export default function ProjectsSection(){
       <>
       <h2 className="text-center text-4xl font-bold text-pink-500 mt-4">My Projects</h2>
       <div className="text-orange-300 flex flex-row justify-center gap-2 py-6">
-       <ProjectTag onClick={handleTagChange} name1="All" isSelected={tag==="All"} /> 
-       <ProjectTag onClick={handleTagChange} name1="Web" isSelected={tag==="Web"} /> 
-       <ProjectTag onClick={handleTagChange} name1="Typescript" isSelected={tag==="Typescript"} /> 
+      <ProjectTag onClick={() => handleTagChange("All")} name1="All" isSelected={tag === "All"} />
+                <ProjectTag onClick={() => handleTagChange("Web")} name1="Web" isSelected={tag === "Web"} />
+                <ProjectTag onClick={() => handleTagChange("Typescript")} name1="Typescript" isSelected={tag === "Typescript"} />
 
        </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
