@@ -5,4 +5,5 @@ const nextConfig = {
     }
 };
 
-export default nextConfig;
+e//xport default nextConfig;
+module.exports=nextConfig;
