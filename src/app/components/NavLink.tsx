@@ -10,7 +10,7 @@ const NavLink:React.FC<NavLinkProps> = ({href, title})=>{
     return(
         <Link 
         href= {href}
-        className="block py-2 pl-3 pr-4 text-orange-400">{title}</Link>
+        className="block py-2 pl-3 pr-4 text-orange-400 hover:text-orange-300">{title}</Link>
     )
 }
 

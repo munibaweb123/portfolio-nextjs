@@ -97,7 +97,7 @@ export default function ProjectsSection(){
 
    
     return(
-      <>
+      <section id="projects">
       <h2 className="text-center text-4xl font-bold text-pink-500 mt-4">My Projects</h2>
       <div className="text-orange-300 flex flex-row justify-center gap-2 py-6">
       <ProjectTag onClick={() => handleTagChange("All")} name1="All" isSelected={tag === "All"} />
@@ -118,6 +118,6 @@ export default function ProjectsSection(){
         />)
     }
       </div>
-      </>
+      </section>
     )
 }

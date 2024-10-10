@@ -5,9 +5,9 @@ import Image from "next/image"
 
 const EmailSection = ()=>{
     return(
-        <section className="bg-[#121212] grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+        <section id="contact" className="bg-[#121212] grid grid-cols-1 px-10 py-10 md:grid-cols-2 my-12 md:my-12  gap-4 relative">
             <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-pink-400 to-transparent rounded full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
-            <div className="flex-1 justify-center items-center pl-10 pr-10">
+            <div className="flex-1 justify-center items-center">
                 <h5 className="text-orange-400 text-4xl px-4 my-2 font-bold">Let&rsquo;s Connect</h5>
                 <p className="text-pink-400 mb-4 max-w-md">
                     I'm currently looking for new opportunities, my inbox is always open, 
@@ -27,7 +27,7 @@ const EmailSection = ()=>{
             </div>
             </div>
             <div>
-                <form className="flex flex-col pr-10 pl-10">
+                <form className="flex flex-col ">
                    <div className="mb-6">
                    <label htmlFor="email" typeof="email" className="text-pink-400 block mb-2  text-sm font-medium">
                         Your Email</label>
@@ -52,6 +52,7 @@ const EmailSection = ()=>{
                    <button type="submit" className="bg-orange-400 hover:bg-orange-300 text-white font-medium py-2.5 rounded-lg w-full">Send Message</button>
                 </form>
             </div>
+           
             
         </section>
     )

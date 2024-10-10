@@ -10,7 +10,7 @@ import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#121212] justify-around pt-10">
+    <main id="home" className="flex min-h-screen flex-col bg-[#121212] justify-around pt-10">
       <Navbar/>
       <div>
       <HeroSection/>

@@ -10,7 +10,7 @@ import MenuOverlay from "./MenuOverlay";
 const NavLinks = [
     {
         title:"Home",
-        path:"#Home",
+        path:"#home",
     },
     {
         title: "About",
@@ -40,7 +40,7 @@ const Navbar= () => {
            
         
            <div>
-          <div className="mobile-menu block md:hidden text-center">
+          <div className="mobile-menu block md:hidden ">
             {
                 !navbarOpen? (
                     <button onClick={()=>setNavbarOpen(true)} className="flex items-center px-3 py-2 border rounded border-slate-200 hover:text-white hover:border-white  text-slate-200">
@@ -52,11 +52,11 @@ const Navbar= () => {
             }
 
           </div>
-          <div className="menu hidden md:block md:w-auto" id="navbar">
+          <div className="menu hidden md:block md:w-auto " id="navbar">
           <ul className="flex p-4 md:flex-row md:space-x-8 pr-4 text-2xl py-2 pl-3  text-orange-400 font-bold sm:text-xl rounded md:p-0 ">
             {NavLinks.map((link,index)=>(
                  <li key={index}>
-                 <NavLink href={link.path} title={link.title}/>
+                 <NavLink  href={link.path} title={link.title}/>
              </li>
  
             ))}
