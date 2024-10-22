@@ -77,6 +77,15 @@ const projectData =[
         name1:["Typescript"] ,
         gitUrl:"https://github.com/munibaweb123/OOP-BANK.git",
         previewUrl:"/",
+    },
+    {
+        id:7,
+        title:"Ecommerce website design", 
+        description:"An e-commerce website design with nextjs", 
+        image:"/images/ecommerce.jpg",
+        name1:["web"] ,
+        gitUrl:"https://github.com/munibaweb123/e-commerce-nextjs.git",
+        previewUrl:"https://e-commerce-nextjs-4sgf.vercel.app/",
     }
 ]
 
