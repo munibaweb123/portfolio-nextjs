@@ -32,14 +32,15 @@ const Navbar= () => {
 
     
 
-        <nav className="fixed top-0 right-0 left-0 z-10 flex-1 justify-between flex-wrap mx-auto p-8 bg-[#121212] bg-opacity-100 px-4 py-2">
-          <div className="container items-center justify-between px-4 py-2 mx-auto">
+        <nav className="fixed top-0 right-0 left-0 z-10 flex justify-between flex-wrap mx-auto p-8 bg-[#121212] bg-opacity-100 px-4 py-2">
+          <div >
 
-                <Link href={"/"} className="text-pink-400 font-bold text-2xl md:text-5xl">Portfolio.</Link></div>
+                <Link href={"/"} className="text-pink-400 font-bold text-2xl md:text-5xl">Portfolio.</Link>
+                </div>
             
            
         
-           <div>
+           
           <div className="mobile-menu block md:hidden ">
             {
                 !navbarOpen? (
@@ -63,7 +64,7 @@ const Navbar= () => {
            
         </ul>
           </div>
-          </div>
+        
         
         {navbarOpen? <MenuOverlay links={NavLinks}/>:null}
         

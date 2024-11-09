@@ -1,9 +1,10 @@
 export default function Footer(){
     return(
-        <footer>
-             <div className="bg-[#121212] text-pink-400 flex justify-center items-center pb-10">
+        <footer className="footer border border-t-[#33353f] border-l-transparent">
+             <div className="container p-12 flex justify-between">
+                <span className="text-white">Portfolio.</span>
             <ul>
-                <li className="text-center">
+                <li className="text-slate-600">
                 &copy; copyright reserverd by Muniba
                 </li>
                 <li className="text-center">Thankyou for visiting my portfolio.</li>
